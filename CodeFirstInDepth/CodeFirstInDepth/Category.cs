@@ -8,7 +8,7 @@ namespace CodeFirstInDepth
 {
     public class Category
     {
-        public int Category_Id { get; set; }
+        public int CategoryId { get; set; }
 
         public string Name { get; set; }
     }
