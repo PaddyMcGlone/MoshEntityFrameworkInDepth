@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace CodeFirstInDepth
 {
@@ -12,5 +13,6 @@ namespace CodeFirstInDepth
         public Author Author  { get; set; }
         public IList<Tag> Tags { get; set; }
         public Category Category { get; set; }
+        public DateTime DatePublished { get; set; }
     }
 }
