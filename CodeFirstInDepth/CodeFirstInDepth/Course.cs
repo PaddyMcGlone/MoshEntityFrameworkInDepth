@@ -11,5 +11,6 @@ namespace CodeFirstInDepth
         public float FullPrice { get; set; }
         public Author Author  { get; set; }
         public IList<Tag> Tags { get; set; }
+        public Category Category { get; set; }
     }
 }
