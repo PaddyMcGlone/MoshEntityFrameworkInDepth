@@ -13,5 +13,13 @@ namespace CodeFirstInDepth
         public DbSet<Author> Authors { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<Category> Categories { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            // Add Required attribute
+            modelBuilder.Entity<Course>()
+                .Property(c => c.Description)
+                .IsRequired();
+        }
     }
 }
