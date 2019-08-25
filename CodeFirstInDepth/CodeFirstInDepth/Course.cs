@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CodeFirstInDepth
 {
@@ -7,6 +9,7 @@ namespace CodeFirstInDepth
     {
         public int Id { get; set; }
 
+        [Required, MaxLength(200)]        
         public string Title { get; set; }
 
         //[Required]
@@ -15,6 +18,9 @@ namespace CodeFirstInDepth
         public CourseLevel Level { get; set; }
 
         public float FullPrice { get; set; }
+
+        [ForeignKey(nameof(Author))] // Identify the name of annotation
+        public int AuthorId { get; set; }
 
         public Author Author  { get; set; }
 

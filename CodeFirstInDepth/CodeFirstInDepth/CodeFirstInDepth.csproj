@@ -80,6 +80,10 @@
     <Compile Include="Migrations\201908241758392_RemoveCategoryFromCourseTable.Designer.cs">
       <DependentUpon>201908241758392_RemoveCategoryFromCourseTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908250821371_AddAnnotationsToCoursesTable.cs" />
+    <Compile Include="Migrations\201908250821371_AddAnnotationsToCoursesTable.Designer.cs">
+      <DependentUpon>201908250821371_AddAnnotationsToCoursesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
     <Compile Include="Program.cs" />
@@ -108,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908241758392_RemoveCategoryFromCourseTable.resx">
       <DependentUpon>201908241758392_RemoveCategoryFromCourseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908250821371_AddAnnotationsToCoursesTable.resx">
+      <DependentUpon>201908250821371_AddAnnotationsToCoursesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
